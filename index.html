@@ -8,21 +8,34 @@
 
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <title>ATOI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Code Task</title>
   </head>
   <body>
     <div class="container">
+      <h1 class="title" align="center">Add up numbers in text</h1>
+      <hr>
       <div class="row">
-        <div class="col-md-6">
-          <input type="text" name="inputString" value="0" id="input">
+        <div class="col-md-6" align="center">
+          <label class="label" for="inputString">INPUT : </label>
+          <input
+          type="text"
+          name="inputString"
+          class="input input-lg"
+          placeholder="Enter..."
+          id="input">
         </div>
-        <div class="col-md-6">
-          <p>Result: <span id="result"></span></p>
+        <div class="col-md-6" align="center">
+          <div class="result-container">
+            <p class="label">RESULT : </p>
+            <p id="result"></p>
+          </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
-          <button type="button" name="button" class="convert btn btn-success">Submit</button>
+        <div class="col-md-12" align="center">
+          <button type="button" name="button" class="convert btn btn-success">Add Up</button>
         </div>
       </div>
     </div>
